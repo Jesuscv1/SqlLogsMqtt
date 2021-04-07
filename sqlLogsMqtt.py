@@ -1,4 +1,4 @@
-SqlLogsMqtt#
+#SqlLogsMqtt#
 import paho.mqtt.client as mqtt
 import sqlite3
  
