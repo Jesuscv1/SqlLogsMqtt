@@ -32,10 +32,12 @@ brokers=["192.168.100.43"]
 options["broker"]=brokers[0]
 options["port"]=1883
 options["verbose"]=True
+options["username"]=username
+options["password"]=password
 options["cname"]=""
 options["topics"]=[("dblog1",0)]
 #sql
-db_file="logs.db"
+db_file="logs.sqlite3"
 Table_name="logs"
 table_fields={
     "id":"integer primary key autoincrement",
@@ -227,6 +229,8 @@ topics=options["topics"]
 broker=options["broker"]
 port=1883
 keepalive=60
+#sanity
+print(options)
 if options["username"] !="":
     print("setting username")
     client.username_pw_set(options["username"], options["password"])
