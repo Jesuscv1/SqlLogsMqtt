@@ -9,7 +9,7 @@ MQTT_USER = 'kael1'
 MQTT_PASSWORD = 'lonchis123'
 TOPIC = 'dblog1'
  
-DATABASE_FILE = 'logs.sqlite3'
+DATABASE_FILE = 'owo.sqlite3'
  
  
 def on_connect(mqtt_client, user_data, flags, conn_result):
